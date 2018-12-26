@@ -1,0 +1,41 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: apple-server
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/woaoo?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT&useSSL=false
+    username: root
+    password: root
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 15
+      auto-commit: true
+      idle-timeout: 30000
+      pool-name: gardenCp
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: select 1
+    type: com.zaxxer.hikari.HikariDataSource
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  main:
+    allow-bean-definition-overriding: true
+
+  redis:
+    host: 123.56.57.153
+    password: woaoo!@#$%
+    port: 6379
+    timeout: 6000ms
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+
+

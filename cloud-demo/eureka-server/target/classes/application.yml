@@ -1,0 +1,20 @@
+server:
+  port: 8761
+#spring:
+#  application:
+#    name: eureka
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+  client:
+#  表明自己是一个eureka server，并防止将自身注册
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+
