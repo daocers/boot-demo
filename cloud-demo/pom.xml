@@ -18,6 +18,8 @@
         <module>apple-server</module>
         <module>apple-client</module>
         <module>web</module>
+        <module>zuul</module>
+        <module>gateway</module>
     </modules>
 
 

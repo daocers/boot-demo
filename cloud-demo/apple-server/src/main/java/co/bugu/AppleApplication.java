@@ -14,6 +14,8 @@ import org.springframework.session.data.redis.config.annotation.web.http.EnableR
 @SpringCloudApplication
 @EnableFeignClients
 @MapperScan("co.bugu.*.*.dao")
+
+//开启基于redis 的session配置
 @EnableRedisHttpSession
 public class AppleApplication {
     public static void main(String[] args) {

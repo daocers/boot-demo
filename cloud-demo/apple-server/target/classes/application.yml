@@ -24,11 +24,15 @@ spring:
   main:
     allow-bean-definition-overriding: true
 
+
+#  基于redis的spring session配置
   redis:
     host: 123.56.57.153
     password: woaoo!@#$%
     port: 6379
     timeout: 6000ms
+  session:
+    store-type: redis
 
 mybatis:
   mapper-locations: classpath:mapper/*Mapper.xml
@@ -36,6 +40,5 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
-
 
 

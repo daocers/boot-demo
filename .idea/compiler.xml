@@ -10,7 +10,9 @@
         <module name="apple-server" />
         <module name="common" />
         <module name="eureka-server" />
+        <module name="gateway" />
         <module name="web" />
+        <module name="zuul" />
       </profile>
     </annotationProcessing>
   </component>

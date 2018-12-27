@@ -1,0 +1,18 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+spring:
+  application:
+    name: gateway
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    gateway:
+      routes:
+      - id: apple
+        uri: http://localhost:8081
+        predicates:
+server:
+  port: 8000
+

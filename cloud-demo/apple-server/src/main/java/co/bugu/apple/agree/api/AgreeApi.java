@@ -109,14 +109,15 @@ class AgreeApi implements IAgreeApi {
     }
 
     @RequestMapping("/set")
-    public RespDto<Boolean> set(HttpServletRequest request){
+    public RespDto<Boolean> set(HttpServletRequest request) {
         request.getSession().setAttribute("name", "allen");
         return RespDto.success(true);
     }
 
     @RequestMapping("/testGet")
-    public RespDto<String> test(HttpServletRequest request){
+    public RespDto<String> test(HttpServletRequest request) {
         String name = (String) request.getSession().getAttribute("name");
+        logger.info("name:::{}", name);
         return RespDto.success(name);
     }
 }

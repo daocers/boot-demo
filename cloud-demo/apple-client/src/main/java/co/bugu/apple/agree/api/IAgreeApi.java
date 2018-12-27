@@ -29,7 +29,7 @@ public interface IAgreeApi {
      * @author auto-coder
      * @date 2018-07-16 16:30
      */
-    @RequestMapping(value = "/skyline-server/agree/api/v1/save", method = RequestMethod.POST)
+    @RequestMapping(value = "/apple/agree/api/v1/save", method = RequestMethod.POST)
     RespDto<Long> saveAgree(@RequestBody AgreeDto agree);
 
 
@@ -41,7 +41,7 @@ public interface IAgreeApi {
      * @author auto-coder
      * @date 2018-07-16 16:30
      */
-    @RequestMapping(value = "/skyline-server/agree/api/v1/findById")
+    @RequestMapping(value = "/apple/agree/api/v1/findById")
     RespDto<AgreeDto> findById(@RequestParam("id") Long id);
 
 
@@ -55,7 +55,7 @@ public interface IAgreeApi {
      * @author auto-coder
      * @date 2018-07-16 16:30
      */
-    @RequestMapping(value = "/skyline-server/agree/api/v1/findByConditionWithPage")
+    @RequestMapping(value = "/apple/agree/api/v1/findByConditionWithPage")
     RespDto<PageInfo<AgreeDto>> findByConditionWithPage(@RequestParam("pageNum") Integer pageNum, @RequestParam("pageSize") Integer pageSize, @RequestBody AgreeDto agreeDto);
 
     /**
@@ -66,7 +66,7 @@ public interface IAgreeApi {
      * @author auto-coder
      * @date 2018-07-16 16:30
      */
-    @RequestMapping(value = "/skyline-server/agree/api/v1/findByCondition")
+    @RequestMapping(value = "/apple/agree/api/v1/findByCondition")
     RespDto<List<AgreeDto>> findByCondition(@RequestBody AgreeDto agreeDto);
 
 
@@ -78,7 +78,7 @@ public interface IAgreeApi {
      * @author auto-coder
      * @date 2018-07-16 16:30
      */
-    @RequestMapping(value = "/skyline-server/agree/api/v1/delete", method = RequestMethod.POST)
+    @RequestMapping(value = "/apple/agree/api/v1/delete", method = RequestMethod.POST)
     RespDto<Boolean> delete(@RequestParam("id") Long id, @RequestParam("operatorId") Long operatorId);
 
 }
