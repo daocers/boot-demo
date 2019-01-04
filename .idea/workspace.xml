@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f2a489e-7c54-4604-a1a4-9adb304d593c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/es/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es/src/main/java/co/bugu/es/EsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es/src/main/java/co/bugu/es/controller/EsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es/src/main/java/co/bugu/es/domain/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es/src/main/java/co/bugu/es/redis/config/JedisPoolConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es/src/main/java/co/bugu/es/redis/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es/src/main/java/co/bugu/es/service/ICityESService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es/src/main/java/co/bugu/es/service/impl/CityESServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-demo/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-demo/gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-demo/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-demo/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -16,6 +26,7 @@
     <ignored path="$PROJECT_DIR$/cloud-demo/web/target/" />
     <ignored path="$PROJECT_DIR$/cloud-demo/zuul/target/" />
     <ignored path="$PROJECT_DIR$/cloud-demo/gateway/target/" />
+    <ignored path="$PROJECT_DIR$/es/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,93 +37,106 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-demo/gateway/pom.xml">
+        <entry file="file://$PROJECT_DIR$/es/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="45" column="66" lean-forward="true" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
+            <state relative-caret-position="1102">
+              <caret line="58" column="57" selection-start-line="58" selection-start-column="57" selection-end-line="58" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GatewayApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-demo/gateway/src/main/java/co/bugu/GatewayApplication.java">
+      <file leaf-file-name="EsApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/es/src/main/java/co/bugu/es/EsApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            <state relative-caret-position="190">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#385#386#0" expanded="true" />
-                <element signature="e#454#455#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Entity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/es/src/main/java/co/bugu/es/domain/Entity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+              <folding>
+                <element signature="e#500#501#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ICityESService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/es/src/main/java/co/bugu/es/service/ICityESService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CityESServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/es/src/main/java/co/bugu/es/service/impl/CityESServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="912">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/es/src/main/java/co/bugu/es/controller/EsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="application.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cloud-demo/gateway/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AgreeApi.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-demo/apple-server/src/main/java/co/bugu/apple/agree/api/AgreeApi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EurekaApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-demo/eureka-server/src/main/java/co/bug/cloud/EurekaApplication.java">
+        <entry file="file://$PROJECT_DIR$/es/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+              <caret line="8" selection-start-line="8" selection-end-line="18" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppleApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-demo/apple-server/src/main/java/co/bugu/AppleApplication.java">
+      <file leaf-file-name="JedisPoolConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/es/src/main/java/co/bugu/es/redis/config/JedisPoolConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedisConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/es/src/main/java/co/bugu/es/redis/config/RedisConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="380">
-              <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+              <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#594#595#0" expanded="true" />
+                <element signature="e#665#666#0" expanded="true" />
+                <element signature="e#719#720#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IAgreeApi.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-demo/apple-client/src/main/java/co/bugu/apple/agree/api/IAgreeApi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Consumer.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/program_files/Java/jdk1.8.0_131/src.zip!/java/util/function/Consumer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="37" column="2" selection-start-line="37" selection-start-column="2" selection-end-line="37" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DiscoveryClient.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/eureka/eureka-client/1.9.3/eureka-client-1.9.3.jar!/com/netflix/discovery/DiscoveryClient.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="5" column="29" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -120,8 +144,8 @@
       <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cloud-demo/apple-server/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            <state relative-caret-position="646">
+              <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -162,9 +186,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cloud-demo/eureka-server/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/cloud-demo/apple-server/src/main/java/co/bugu/apple/Application.java" />
-        <option value="$PROJECT_DIR$/cloud-demo/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-demo/eureka-server/src/main/java/co/bug/cloud/EurekaApplication.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/co/bugu/common/dao/RespDto.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/co/bugu/common/dao/BaseDao.java" />
@@ -207,6 +228,15 @@
         <option value="$PROJECT_DIR$/cloud-demo/gateway/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-demo/apple-client/src/main/java/co/bugu/apple/agree/api/IAgreeApi.java" />
         <option value="$PROJECT_DIR$/cloud-demo/gateway/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/es/src/main/java/co/bugu/es/EsApplication.java" />
+        <option value="$PROJECT_DIR$/es/src/main/java/co/bugu/es/domain/Entity.java" />
+        <option value="$PROJECT_DIR$/es/src/main/java/co/bugu/es/service/ICityESService.java" />
+        <option value="$PROJECT_DIR$/es/pom.xml" />
+        <option value="$PROJECT_DIR$/es/src/main/java/co/bugu/es/service/impl/CityESServiceImpl.java" />
+        <option value="$PROJECT_DIR$/es/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/es/src/main/java/co/bugu/es/controller/EsController.java" />
+        <option value="$PROJECT_DIR$/es/src/main/java/co/bugu/es/redis/config/JedisPoolConfig.java" />
+        <option value="$PROJECT_DIR$/es/src/main/java/co/bugu/es/redis/config/RedisConfig.java" />
       </list>
     </option>
   </component>
@@ -242,11 +272,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="250" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="806" />
     <option name="y" value="16" />
-    <option name="width" value="1715" />
-    <option name="height" value="1355" />
+    <option name="width" value="1615" />
+    <option name="height" value="1384" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -256,8 +286,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -273,29 +303,25 @@
             <path>
               <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="apple-client" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="apple-client" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="apple-client" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="apple-client" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -303,219 +329,45 @@
             <path>
               <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="apple-client" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="apple" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="apple-client" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="apple" type="462c0819:PsiDirectoryNode" />
-              <item name="agree" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="apple-client" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="apple" type="462c0819:PsiDirectoryNode" />
-              <item name="agree" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="apple-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="apple-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="apple-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="apple-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="apple-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bugu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="apple-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bugu" type="462c0819:PsiDirectoryNode" />
-              <item name="apple" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="apple-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bugu" type="462c0819:PsiDirectoryNode" />
-              <item name="apple" type="462c0819:PsiDirectoryNode" />
-              <item name="agree" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="apple-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bugu" type="462c0819:PsiDirectoryNode" />
-              <item name="apple" type="462c0819:PsiDirectoryNode" />
-              <item name="agree" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="apple-server" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bugu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -539,11 +391,11 @@
       <recent name="co.bugu.common.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CODE\boot-demo\es\src\main\java\co\bugu\es\redis\config" />
       <recent name="D:\CODE\boot-demo\cloud-demo\apple-client\src\main\java\co\bugu\apple\worker" />
       <recent name="D:\CODE\boot-demo\cloud-demo\apple-server\src\main\java\co\bugu\apple" />
       <recent name="D:\CODE\boot-demo\cloud-demo\apple-server\src\main\resources\mapper" />
       <recent name="D:\CODE\boot-demo" />
-      <recent name="D:\CODE\boot-demo\cloud-demo\apple-client\src\main\java\co\bugu\apple" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -558,9 +410,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GatewayApplication">
+  <component name="RunManager" selected="Application.EsApplication">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration name="EsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="co.bugu.es.EsApplication" />
+      <module name="es" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.bugu.es.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration name="EurekaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="co.bug.cloud.EurekaApplication" />
@@ -640,16 +503,6 @@
       <module name="web" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="co.bugu.WebApplication" />
     </configuration>
-    <configuration name="WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="co.bugu.web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="co.bugu.web.WebApplication" />
-    </configuration>
     <configuration name="ZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="zuul" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="co.bugu.ZuulApplication" />
@@ -681,20 +534,20 @@
       <item itemvalue="Spring Boot.AppleApplication" />
       <item itemvalue="Spring Boot.WebApplication (1)" />
       <item itemvalue="Spring Boot.ZuulApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Application.EurekaApplication" />
-      <item itemvalue="Spring Boot.WebApplication" />
       <item itemvalue="Spring Boot.AppleApplication (1)" />
       <item itemvalue="Application.WebApplication" />
       <item itemvalue="Application.GatewayApplication" />
-      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Application.EsApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EsApplication" />
         <item itemvalue="Application.GatewayApplication" />
         <item itemvalue="Spring Boot.AppleApplication (1)" />
         <item itemvalue="Application.EurekaApplication" />
         <item itemvalue="Application.WebApplication" />
-        <item itemvalue="Spring Boot.WebApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -714,7 +567,12 @@
       <workItem from="1545892609574" duration="2145000" />
       <workItem from="1545895101666" duration="5633000" />
       <workItem from="1545902255759" duration="5072000" />
-      <workItem from="1545960255106" duration="7115000" />
+      <workItem from="1545960255106" duration="7296000" />
+      <workItem from="1546048465004" duration="8343000" />
+      <workItem from="1546386738652" duration="589000" />
+      <workItem from="1546478809332" duration="3289000" />
+      <workItem from="1546486471846" duration="6485000" />
+      <workItem from="1546564820425" duration="1784000" />
     </task>
     <task id="LOCAL-00001" summary="添加gitignore">
       <created>1545821871416</created>
@@ -730,14 +588,21 @@
       <option name="project" value="LOCAL" />
       <updated>1545909918686</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加gitignore">
+      <created>1545993370004</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1545993370004</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49771000" />
+    <option name="totallyTimeSpent" value="70442000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="200" y="13" width="1372" height="1084" extended-state="0" />
+    <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -749,18 +614,17 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.35902852" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35894844" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32929292" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32946146" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.34479272" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20700152" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1282435" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -768,6 +632,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32929292" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -792,8 +657,14 @@
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/es/src/main/java/co/bugu/es/controller/EsController.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -826,39 +697,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-demo/apple-client/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-demo/apple-server/src/main/resources/mapper/worker/domain/Worker.java" />
-    <entry file="file://$PROJECT_DIR$/cloud-demo/apple-server/src/main/resources/mapper/worker/dao/WorkerDao.java" />
-    <entry file="file://$PROJECT_DIR$/cloud-demo/apple-server/src/main/resources/mapper/worker/api/WorkerApi.java" />
-    <entry file="file://$PROJECT_DIR$/cloud-demo/apple-server/src/main/resources/mapper/worker/service/IWorkerService.java" />
-    <entry file="file://$PROJECT_DIR$/cloud-demo/apple-server/src/main/resources/mapper/worker/service/impl/WorkerServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/cloud-demo/apple-server/src/main/resources/mapper/WorkerBaseMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="40" column="85" selection-start-line="40" selection-start-column="85" selection-end-line="40" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cloud-demo/apple-server/src/main/resources/mapper/WorkerExtMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -931,9 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1044,61 +879,137 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cloud-demo/apple-server/src/main/java/co/bugu/AppleApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
+        <state relative-caret-position="304">
           <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cloud-demo/apple-server/src/main/java/co/bugu/apple/agree/api/AgreeApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-demo/apple-server/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cloud-demo/gateway/src/main/java/co/bugu/GatewayApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="247">
           <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cloud-demo/gateway/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="45" column="66" lean-forward="true" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
+        <state relative-caret-position="855">
+          <caret line="45" column="66" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cloud-demo/apple-client/src/main/java/co/bugu/apple/agree/api/IAgreeApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+        <state relative-caret-position="475">
+          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-demo/gateway/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/es/src/main/java/co/bugu/es/domain/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding>
+            <element signature="e#500#501#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/es/src/main/java/co/bugu/es/service/ICityESService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-demo/gateway/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/es/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1102">
+          <caret line="58" column="57" selection-start-line="58" selection-start-column="57" selection-end-line="58" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/es/src/main/java/co/bugu/es/service/impl/CityESServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-demo/apple-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/es/src/main/java/co/bugu/es/EsApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/es/src/main/java/co/bugu/es/redis/config/JedisPoolConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/es/src/main/java/co/bugu/es/redis/config/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/es/src/main/java/co/bugu/es/controller/EsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/es/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" selection-start-line="8" selection-end-line="18" selection-end-column="22" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,19 @@
+server:
+  port: 8085
+spring:
+  elasticsearch:
+    jest:
+      uris:
+      - http://123.57.250.233:9200
+      read-timeout: 5s
+  redis:
+    host: 123.56.57.153
+    password: woaoo!@#$%
+    port: 6379
+    timeout: 6000ms
+    database: 0
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 8
+        max-wait: -1ms

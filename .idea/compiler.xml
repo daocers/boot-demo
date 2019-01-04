@@ -9,6 +9,7 @@
         <module name="apple-client" />
         <module name="apple-server" />
         <module name="common" />
+        <module name="es" />
         <module name="eureka-server" />
         <module name="gateway" />
         <module name="web" />
