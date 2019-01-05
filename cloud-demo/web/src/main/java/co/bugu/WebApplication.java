@@ -1,11 +1,13 @@
 package co.bugu;
 
+import co.bugu.interceptor.BuguFeignRequestInterceptor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.context.annotation.Bean;
 
 /**
  * @Author daocers
@@ -22,4 +24,8 @@ public class WebApplication {
         SpringApplication.run(WebApplication.class, args);
     }
 
+    @Bean
+    public BuguFeignRequestInterceptor buguFeignRequestInterceptor(){
+        return new BuguFeignRequestInterceptor();
+    }
 }
