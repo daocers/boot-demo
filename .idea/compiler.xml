@@ -9,12 +9,27 @@
         <module name="apple-client" />
         <module name="apple-server" />
         <module name="common" />
+        <module name="config-client" />
+        <module name="config-server" />
         <module name="es" />
+        <module name="eureka-client" />
         <module name="eureka-server" />
+        <module name="eurekaserver" />
         <module name="gateway" />
+        <module name="service-feign" />
+        <module name="service-ribbon" />
+        <module name="service-turbine" />
+        <module name="service-zuul" />
         <module name="web" />
         <module name="zuul" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-finchely" target="1.8" />
+      <module name="eureka-host" target="1.8" />
+      <module name="eureka-server (1)" target="1.8" />
+      <module name="zipkin-service-hi" target="1.8" />
+      <module name="zipkin-service-miya" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

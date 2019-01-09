@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.Nullable;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
@@ -67,9 +66,8 @@ class AgreeApi implements IAgreeApi {
         BeanUtils.copyProperties(pageInfo, res);
         if (CollectionUtils.isNotEmpty(pageInfo.getList())) {
             List<AgreeDto> dtos = Lists.transform(pageInfo.getList(), new Function<Agree, AgreeDto>() {
-                @Nullable
                 @Override
-                public AgreeDto apply(@Nullable Agree agree) {
+                public AgreeDto apply(Agree agree) {
                     AgreeDto dto = new AgreeDto();
                     BeanUtils.copyProperties(agree, dto);
                     return dto;
@@ -87,9 +85,8 @@ class AgreeApi implements IAgreeApi {
         List<Agree> list = agreeService.findByCondition(agree);
         if (CollectionUtils.isNotEmpty(list)) {
             List<AgreeDto> dtos = Lists.transform(list, new Function<Agree, AgreeDto>() {
-                @Nullable
                 @Override
-                public AgreeDto apply(@Nullable Agree agree) {
+                public AgreeDto apply( Agree agree) {
                     AgreeDto dto = new AgreeDto();
                     BeanUtils.copyProperties(agree, dto);
                     return dto;

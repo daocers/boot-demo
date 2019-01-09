@@ -6,6 +6,8 @@ import co.bugu.apple.file.api.IFileApi;
 import co.bugu.apple.worker.api.IWorkerApi;
 import co.bugu.common.RespDto;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
@@ -34,9 +36,10 @@ public class AgreeController {
         return agreeApi.findById(1L);
     }
 
-    @RequestMapping("/upload")
+    @PostMapping(value = "/upload")
     public RespDto<String> upload(MultipartFile file) throws IOException {
         RespDto<String> respDto = fileApi.upload(file);
+
         return respDto;
     }
 }

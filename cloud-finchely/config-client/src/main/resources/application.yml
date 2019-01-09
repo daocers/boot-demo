@@ -1,0 +1,37 @@
+server:
+  port: 8881
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      label: master
+      profile: dev
+#      直接设置配置中心，抛开了注册中心
+#      uri: http://localhost:8888
+
+
+#      以服务形式从配置中心取数据，config server集群的情况下，必须这样做
+      discovery:
+        service-id: config-server
+        enabled: true
+    bus:
+      enabled: true
+      trace:
+        enabled: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+

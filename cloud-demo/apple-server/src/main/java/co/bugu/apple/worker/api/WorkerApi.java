@@ -15,7 +15,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.Nullable;
 import java.util.List;
 
 /**
@@ -65,9 +64,8 @@ class WorkerApi implements IWorkerApi {
         BeanUtils.copyProperties(pageInfo, res);
         if (CollectionUtils.isNotEmpty(pageInfo.getList())) {
             List<WorkerDto> dtos = Lists.transform(pageInfo.getList(), new Function<Worker, WorkerDto>() {
-                @Nullable
                 @Override
-                public WorkerDto apply(@Nullable Worker worker) {
+                public WorkerDto apply(Worker worker) {
                     WorkerDto dto = new WorkerDto();
                     BeanUtils.copyProperties(worker, dto);
                     return dto;
@@ -85,9 +83,8 @@ class WorkerApi implements IWorkerApi {
         List<Worker> list = workerService.findByCondition(worker);
         if (CollectionUtils.isNotEmpty(list)) {
             List<WorkerDto> dtos = Lists.transform(list, new Function<Worker, WorkerDto>() {
-                @Nullable
                 @Override
-                public WorkerDto apply(@Nullable Worker worker) {
+                public WorkerDto apply(Worker worker) {
                     WorkerDto dto = new WorkerDto();
                     BeanUtils.copyProperties(worker, dto);
                     return dto;

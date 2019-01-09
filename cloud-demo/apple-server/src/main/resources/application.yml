@@ -3,6 +3,12 @@ server:
 spring:
   application:
     name: apple-server
+  http:
+    multipart:
+      enabled: true         #启用http上传
+      max-file-size: 10MB     # 设置单个文件的最大长度
+      max-request-size: 100MB  #· 设置最大的请求文件的大小
+      file-size-threshold: 1MB   # 当上传文件到达1MB的时候进行磁盘写入
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/woaoo?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT&useSSL=false

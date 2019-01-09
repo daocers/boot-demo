@@ -12,6 +12,7 @@
         <module>cloud-demo</module>
         <module>common</module>
         <module>es</module>
+        <module>cloud-finchely</module>
     </modules>
 
 

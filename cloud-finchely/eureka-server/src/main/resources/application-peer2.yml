@@ -1,0 +1,18 @@
+
+spring:
+  application:
+    name: eureka-server
+  profiles: peer2
+eureka:
+  client:
+#  表明自己是一个eureka-server
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+server:
+  port: 8861
+

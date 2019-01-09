@@ -1,6 +1,8 @@
-co\bugu\apple\agree\api\hystrix\AgreeServiceHystrix.class
 co\bugu\apple\worker\api\hystrix\WorkerServiceHystrix.class
+co\bugu\apple\agree\api\IAgreeApi.class
+co\bugu\apple\agree\api\hystrix\AgreeServiceHystrix.class
 co\bugu\apple\worker\api\IWorkerApi.class
 co\bugu\apple\worker\dto\WorkerDto.class
+co\bugu\apple\file\api\IFileApi.class
 co\bugu\apple\agree\dto\AgreeDto.class
-co\bugu\apple\agree\api\IAgreeApi.class
+co\bugu\apple\file\api\IFileApi$MultipartSupportConfig.class

@@ -5,6 +5,7 @@ D:\CODE\boot-demo\cloud-demo\apple-server\src\main\java\co\bugu\apple\agree\serv
 D:\CODE\boot-demo\cloud-demo\apple-server\src\main\java\co\bugu\apple\worker\service\impl\WorkerServiceImpl.java
 D:\CODE\boot-demo\cloud-demo\apple-server\src\main\java\co\bugu\AppleApplication.java
 D:\CODE\boot-demo\cloud-demo\apple-server\src\main\java\co\bugu\apple\worker\service\IWorkerService.java
+D:\CODE\boot-demo\cloud-demo\apple-server\src\main\java\co\bugu\apple\file\api\FileApi.java
 D:\CODE\boot-demo\cloud-demo\apple-server\src\main\java\co\bugu\apple\worker\api\WorkerApi.java
 D:\CODE\boot-demo\cloud-demo\apple-server\src\main\java\co\bugu\apple\worker\dao\WorkerDao.java
 D:\CODE\boot-demo\cloud-demo\apple-server\src\main\java\co\bugu\apple\agree\service\IAgreeService.java

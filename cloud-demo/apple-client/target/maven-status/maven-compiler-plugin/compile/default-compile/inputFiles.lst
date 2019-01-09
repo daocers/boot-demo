@@ -3,4 +3,5 @@ D:\CODE\boot-demo\cloud-demo\apple-client\src\main\java\co\bugu\apple\worker\dto
 D:\CODE\boot-demo\cloud-demo\apple-client\src\main\java\co\bugu\apple\worker\api\IWorkerApi.java
 D:\CODE\boot-demo\cloud-demo\apple-client\src\main\java\co\bugu\apple\agree\api\hystrix\AgreeServiceHystrix.java
 D:\CODE\boot-demo\cloud-demo\apple-client\src\main\java\co\bugu\apple\agree\api\IAgreeApi.java
+D:\CODE\boot-demo\cloud-demo\apple-client\src\main\java\co\bugu\apple\file\api\IFileApi.java
 D:\CODE\boot-demo\cloud-demo\apple-client\src\main\java\co\bugu\apple\worker\api\hystrix\WorkerServiceHystrix.java
