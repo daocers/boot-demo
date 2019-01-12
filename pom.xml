@@ -13,6 +13,7 @@
         <module>common</module>
         <module>es</module>
         <module>cloud-finchely</module>
+        <module>third-tool</module>
     </modules>
 
 
