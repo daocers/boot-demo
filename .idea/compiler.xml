@@ -21,7 +21,10 @@
         <module name="service-ribbon" />
         <module name="service-turbine" />
         <module name="service-zuul" />
+        <module name="sharding-demo" />
         <module name="third-tool" />
+        <module name="tx-a" />
+        <module name="tx-b" />
         <module name="web" />
         <module name="zuul" />
       </profile>

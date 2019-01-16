@@ -14,6 +14,7 @@
         <module>es</module>
         <module>cloud-finchely</module>
         <module>third-tool</module>
+        <module>sharding-demo</module>
     </modules>
 
 
